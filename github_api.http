@@ -28,7 +28,7 @@ Accept: application/vnd.github.v3+json
 
 ### 🔹 Part 4: Authenticated Request
 GET https://api.github.com/user/repos
-Authorization: Bearer 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
+Authorization: Bearer YOUR_TOKEN
 
 ###
 
