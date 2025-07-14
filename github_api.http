@@ -1,0 +1,46 @@
+### Exploring the GitHub API – Guided Exercise
+
+This `.http` file contains several example requests designed for use with the **REST Client extension in VS Code** or the **HTTP Client in JetBrains IDEs**.
+
+---
+
+### 🔹 Part 1: Basic Public API Request (GET Octocat's Profile)
+GET https://api.github.com/users/octocat
+
+###
+
+---
+
+### 🔹 Part 2: List Public Repositories of Octocat
+GET https://api.github.com/users/octocat/repos
+
+###
+
+---
+
+### 🔹 Part 3: Get Details of a Specific Repository
+GET https://api.github.com/repos/octocat/Hello-World
+Accept: application/vnd.github.v3+json
+
+###
+
+---
+
+### 🔹 Part 4: Authenticated Request
+GET https://api.github.com/user/repos
+Authorization: Bearer YOUR_TOKEN
+
+###
+
+---
+
+### ✅ Notes:
+- All requests use the `GET` method.
+- Use the "Send Request" link (VS Code) or green play button (JetBrains) to send each.
+- Explore response JSON fields such as `login`, `name`, `id`, `public_repos`, etc.
+- View response headers to understand metadata like `X-RateLimit-Remaining`.
+
+---
+
+### 📚 GitHub REST API Docs:
+https://docs.github.com/en/rest
